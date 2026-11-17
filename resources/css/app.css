@@ -1,0 +1,25 @@
+@import 'tailwindcss';
+
+/* Design tokens. Change the brand here, not in components. */
+@theme {
+    --color-brand-50: oklch(0.97 0.01 260);
+    --color-brand-100: oklch(0.93 0.03 260);
+    --color-brand-600: oklch(0.5 0.2 262);
+    --color-brand-700: oklch(0.45 0.2 262);
+    --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif;
+}
+
+/* Gantt bar colours, set by status (see GanttChart.vue). */
+.gantt .bar-wrapper.st-todo .bar { fill: #94a3b8; }
+.gantt .bar-wrapper.st-todo .bar-progress { fill: #64748b; }
+.gantt .bar-wrapper.st-in_progress .bar { fill: #c7d2fe; }
+.gantt .bar-wrapper.st-in_progress .bar-progress { fill: #4f46e5; }
+.gantt .bar-wrapper.st-done .bar { fill: #a7f3d0; }
+.gantt .bar-wrapper.st-done .bar-progress { fill: #10b981; }
+.gantt .bar-wrapper.overdue .bar { fill: #fecdd3; }
+.gantt .bar-wrapper.overdue .bar-progress { fill: #e11d48; }
+.gantt .bar-wrapper.milestone .bar { fill: #fde68a; }
+.gantt .bar-wrapper.milestone .bar-progress { fill: #f59e0b; }
+.gantt .bar-wrapper.milestone-done .bar { fill: #fde68a; }
+.gantt .bar-wrapper.milestone-done .bar-progress { fill: #f59e0b; }
+.gantt-popup { padding: 6px 8px; font-size: 12px; }
